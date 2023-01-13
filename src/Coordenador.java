@@ -30,4 +30,10 @@ public class Coordenador extends Pessoa{
             System.out.println("Carga horaria total: 60 horas");
         }
     }
+
+    @Override
+    public String toString() {
+        String texto = super.toString() + ", Curso coordenado: " + this.getCursoCoordenado();
+        return texto;
+    }
 }

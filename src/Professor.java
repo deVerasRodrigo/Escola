@@ -43,4 +43,9 @@ public class Professor extends Pessoa {
         }
     }
 
+    @Override
+    public String toString() {
+        String texto = super.toString() + ", Disciplina: " + this.getDisciplina() + ", Turma: " + this.getTurma();
+        return texto;
+    }
 }
