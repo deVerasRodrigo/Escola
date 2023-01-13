@@ -42,4 +42,12 @@ public class Aluno extends Pessoa{
         }
 
     }
+
+    @Override
+    public String toString() {
+        String texto = super.toString() + ", Disciplina: " + this.getDisciplina() +
+                ", Média geral: " + this.getMedia();
+
+        return texto;
+    }
 }

@@ -1,5 +1,7 @@
+import java.math.BigDecimal;
+
 public final class AlunoBolsista extends Aluno{
-    private Double valorBolsa;
+    private BigDecimal valorBolsa;
 
     public AlunoBolsista() {
     }
@@ -8,12 +10,17 @@ public final class AlunoBolsista extends Aluno{
         super(nome, registro, disciplina, media);
     }
 
-    public Double getValorBolsa() {
+    public BigDecimal getValorBolsa() {
         return valorBolsa;
     }
 
-    public void setValorBolsa(Double valorBolsa) {
+    public void setValorBolsa(BigDecimal valorBolsa) {
         this.valorBolsa = valorBolsa;
     }
 
+    @Override
+    public String toString() {
+        String texto = super.toString() + ", Valor bolsa: " + this.getValorBolsa();
+        return texto;
+    }
 }

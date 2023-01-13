@@ -44,4 +44,8 @@ public abstract class Pessoa {
         return registro.equals(pessoa.registro);
     }
 
+    @Override
+    public String toString() {
+        return "Nome: " + this.getNome() + ", Registro: " + this.getRegistro();
+    }
 }
